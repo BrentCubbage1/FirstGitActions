@@ -22,7 +22,7 @@ jobs:
       - name: executeTest
         run: |
           echo running maven clean tests
-          mvn clean tests
+          mvn clean test
 
       - name: myCustomStep
         run: echo myOneLiner
