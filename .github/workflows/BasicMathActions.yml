@@ -10,18 +10,18 @@ jobs:
 
     steps:
       - name: checkoutBranch
-      uses: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: setupJava
-      uses: actions/setup-java@v3
-        with:
-          java-version: 11
+        uses: actions/setup-java@v3
+          with:
+            java-version: 11
 
       - name: setupMaven
-      uses: actions/maven@v3
-        with:
-          maven-version: 3.8.6
-          goals: test
+        uses: actions/maven@v3
+          with:
+            maven-version: 3.8.6
+            goals: test
 
       - name: myCustomStep
         run: echo myOneLiner
