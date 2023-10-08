@@ -16,4 +16,9 @@ public class BasicMathTests {
         Assert.assertEquals(expected, actual);
 
     }
+
+    @Test
+    public void addTest(){
+        Assert.assertEquals(1+2, 3);
+    }
 }

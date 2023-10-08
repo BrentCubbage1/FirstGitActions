@@ -1,0 +1,34 @@
+name: Java with Maven
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkoutBranch
+      uses: actions/checkout@v3
+
+      - name: setupJava
+      uses: actions/setup-java@v3
+        with:
+          java-version: 11
+
+      - name: setupMaven
+      uses: actions/maven@v3
+        with:
+          maven-version: 3.8.6
+          goals: test
+
+      - name: myCustomStep
+        run: echo myOneLiner
+
+      - name: mySecondCustomStep
+        run: |
+          echo this is my first line
+          ls-al
+          echo above is the content of my current directory
+
