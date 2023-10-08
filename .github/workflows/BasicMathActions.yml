@@ -30,6 +30,6 @@ jobs:
       - name: mySecondCustomStep
         run: |
           echo this is my first line
-          ls-al
+          ls -al
           echo above is the content of my current director
 

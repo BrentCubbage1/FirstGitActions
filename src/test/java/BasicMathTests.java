@@ -10,7 +10,7 @@ public class BasicMathTests {
         BasicMath basicMath = new BasicMath();
 
         int expected = 3;
-        int actual = basicMath.addNumbers(1,2);
+        int actual = basicMath.addNumbers(3,2);
 
         System.out.println("This test run yields: " + actual);
         Assert.assertEquals(expected, actual);
